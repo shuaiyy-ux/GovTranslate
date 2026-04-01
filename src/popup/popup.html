@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <div class="header">
+      <h1>GovTranslate</h1>
+      <span class="subtitle">美国政府网站智能翻译 + AI 解释</span>
+    </div>
+
+    <div class="section" id="api-warning" style="display:none;">
+      <div class="warning-box">
+        请先设置 API Key 以启用 AI 解释功能
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="status-row">
+        <span class="status-label">当前页面</span>
+        <span class="status-value" id="page-status">检测中...</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <button id="translate-btn" class="btn-primary btn-full">智能翻译此页面</button>
+      <p class="help">使用智能词库匹配翻译（免费）</p>
+    </div>
+
+    <div class="section">
+      <div class="select-row">
+        <span>目标语言</span>
+        <select id="target-lang">
+          <option value="zh-CN">简体中文</option>
+          <option value="zh-TW">繁體中文</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section">
+      <label for="api-key">AI API Key（自动识别 Claude / GPT / Gemini / DeepSeek）</label>
+      <div class="api-input-row">
+        <input type="password" id="api-key" placeholder="粘贴任意 API Key...">
+        <button id="save-key" class="btn-primary">保存</button>
+      </div>
+      <span class="api-status" id="api-status"></span>
+    </div>
+
+    <div class="tutorial-section">
+      <button class="tutorial-toggle" id="tutorial-toggle">使用教程 ▼</button>
+      <div class="tutorial-content" id="tutorial-content" style="display:none;">
+        <div class="tutorial-step"><b>1. 翻译网页</b>：打开任意 .gov 网站，点击顶部蓝色横幅的"翻译"按钮</div>
+        <div class="tutorial-step"><b>2. AI 解释</b>：在翻译后的页面上选中文字，点击"💡 AI 解释"按钮</div>
+        <div class="tutorial-step"><b>3. 追问</b>：在 AI 解释气泡的输入框中继续提问</div>
+        <div class="tutorial-step"><b>4. PDF 翻译</b>：打开 .gov 的 PDF，点击"翻译 PDF"自动下载并跳转到翻译页面</div>
+        <div class="tutorial-step"><b>5. 设置 API Key</b>：支持 Claude / GPT / Gemini / DeepSeek，粘贴任意一个 Key 即可自动识别</div>
+        <div class="tutorial-step"><b>快捷键</b>：<kbd>Esc</kbd> 关闭 AI 解释气泡</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="hint">高亮选中文字 → AI 自动解释</span>
+      <span class="version">v2.2</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

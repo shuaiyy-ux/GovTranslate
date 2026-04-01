@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="panel">
+    <div class="header">
+      <h1>GovTranslate AI</h1>
+      <span class="subtitle">高亮选中文字获取解释</span>
+    </div>
+    <div class="messages" id="messages">
+      <div class="welcome">
+        <p>在政府网站或 Google 翻译页面上选中任何文字，AI 将为您解释其含义。</p>
+        <p class="hint">支持移民、税务、社保等政府术语的中文解释。</p>
+      </div>
+    </div>
+    <div class="input-area">
+      <input type="text" id="input" placeholder="输入问题..." disabled>
+      <button id="send-btn" disabled>发送</button>
+    </div>
+  </div>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

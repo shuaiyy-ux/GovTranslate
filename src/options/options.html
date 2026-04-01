@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="options">
+    <h1>GovTranslate 设置</h1>
+
+    <section>
+      <h2>AI API Key</h2>
+      <div class="field">
+        <input type="password" id="api-key" placeholder="粘贴任意 API Key...">
+        <button id="delete-key" class="btn-danger" style="display:none;margin-top:6px;">删除 API Key</button>
+        <p class="help">自动识别 Claude / GPT / Gemini / DeepSeek。粘贴任意一个 Key 即可。网页翻译使用免费翻译引擎，不需要 API Key。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>翻译设置</h2>
+      <div class="field">
+        <label for="target-lang">目标语言</label>
+        <select id="target-lang">
+          <option value="zh-CN">简体中文</option>
+          <option value="zh-TW">繁體中文</option>
+        </select>
+      </div>
+      <div class="field">
+        <label class="checkbox-label">
+          <input type="checkbox" id="show-chatbox" checked>
+          <span>启用高亮选词解释</span>
+        </label>
+      </div>
+    </section>
+
+    <section>
+      <h2>快捷键</h2>
+      <div class="shortcut-row"><kbd>Esc</kbd> <span>关闭解释气泡</span></div>
+    </section>
+
+    <div class="actions">
+      <button id="save-btn" class="btn-primary">保存设置</button>
+      <span id="save-status"></span>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
