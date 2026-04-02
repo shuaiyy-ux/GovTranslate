@@ -1,44 +1,33 @@
-# GovTranslate Privacy Policy
+# 美政通 隐私政策
 
-Last updated: 2026-04-01
+最后更新：2026-04-02
 
-## What data we collect
+## 我们收集的数据
 
-**Selected text**: When you use the "AI 解释" feature, the text you highlight on a webpage is sent to your configured AI provider for explanation. This includes the selected text and a short snippet of surrounding context.
+**选中的文字**：当你使用 AI 解释功能时，你在网页上选中的文字及少量上下文会被发送到你自己配置的 AI 服务进行处理。
 
-**Page URL**: Sent alongside selected text to help the AI provide contextually relevant explanations.
+**页面网址**：与选中文字一起发送，帮助 AI 提供更准确的解释。
 
-**API Key**: Your API key is stored locally on your device using Chrome's local storage (`chrome.storage.local`). It is never synced to other devices or sent to any server other than the AI provider you configured.
+**API Key**：你的 API Key 仅存储在你的本地设备上（chrome.storage.local），不会同步到其他设备，也不会发送到我们的服务器。
 
-**Language preference**: Your language setting (Simplified/Traditional Chinese) is stored in Chrome's sync storage for convenience across devices.
+**语言偏好**：你的语言设置（简体/繁体中文）存储在 Chrome 同步存储中，方便跨设备使用。
 
-## Third-party AI services
+## 我们不收集的数据
 
-Depending on which API key you configure, your selected text may be sent to one of the following services:
+- 不收集任何分析或遥测数据
+- 不记录浏览历史
+- 不收集个人身份信息
+- 不使用 Cookie 或追踪技术
+- 不向任何由我们运营的服务器发送数据
 
-- **Anthropic Claude API** (`api.anthropic.com`) — [Privacy Policy](https://www.anthropic.com/privacy)
-- **OpenAI API** (`api.openai.com`) — [Privacy Policy](https://openai.com/privacy)
-- **Google Gemini API** (`generativelanguage.googleapis.com`) — [Privacy Policy](https://policies.google.com/privacy)
-- **DeepSeek API** (`api.deepseek.com`) — [Privacy Policy](https://www.deepseek.com/privacy)
+## 第三方服务
 
-Only the provider matching your API key receives data. No data is sent to the other providers.
+AI 解释功能会将你选中的文字发送到你自己配置的 AI 服务商进行处理。具体发送到哪个服务商取决于你设置的 API Key，扩展会自动识别。数据仅发送到你配置的那一个服务商，不会发送到其他服务商。
 
-## Google Translate
+## 数据存储
 
-Web pages are translated by redirecting through Google Translate's free web service. Google's privacy policy applies. See: https://policies.google.com/privacy
+所有数据都存储在你的本地设备上，我们没有任何服务器端存储。
 
-## What data we do NOT collect
+## 联系方式
 
-- No analytics or telemetry
-- No browsing history
-- No personal information
-- No cookies or tracking
-- No data is sent to any server operated by the extension developer
-
-## Data storage
-
-All data is stored locally on your device. No server-side storage exists.
-
-## Contact
-
-For questions about this privacy policy, please open an issue at the project's GitHub repository.
+如对本隐私政策有疑问，请在项目的 GitHub 仓库中提交 issue。
